@@ -9,6 +9,18 @@ internationalized and written in English.
 
 ## Development on Froide
 
+### Using a devcontainer
+To get stated quickly, this repository comes with a preconfigured development environment. To be able to use this environment, you need two things installed on your computer:
+
+- docker
+- visual studio code (vscode)
+
+To start developing clone this repository, open the folder in vscode and use the _development container_ feature. The command is called _Reopen in container_.
+
+After that you can start debugging by using the preconfigured launch settings.
+
+### Manual setup
+
 After clone, create a Python 3.8+ virtual environment and install dependencies:
 
 ```
