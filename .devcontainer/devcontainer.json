@@ -32,11 +32,16 @@
 				"python.linting.flake8Args": [
 					"--ignore=E501, E128",
 					"--verbose",
-					"--exclude=__init__.py"
+					"--exclude=__init__.py,local_settings.py"
 				],
-				// format on save with 'black'
-				"python.formatting.provider": "black",
-				"python.formatting.blackPath": "/usr/local/bin/black",
+
+				"python.testing.unittestEnabled": false,
+				"python.testing.pytestEnabled": true,
+
+				"[python]": {
+					"editor.defaultFormatter": "ms-python.black-formatter",
+					"editor.formatOnSave": true
+				},
 
 				"eslint.format.enable": true,
 				"vetur.format.defaultFormatter.css": "prettier",
@@ -51,7 +56,8 @@
 				"dbaeumer.vscode-eslint",
 				"ms-python.flake8",
 				"octref.vetur",
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"ms-python.black-formatter"
 			]
 		}
 	},
